@@ -1,0 +1,25 @@
+.home{
+  background: url("http://www.drinkingwithmycat.com/images/intensecharlie.JPG") no-repeat top center fixed;
+  background-size: cover;
+  h1{
+    position: fixed;
+    color: white;
+    margin-top: 8%;
+    margin-left: 5%;
+    }
+}
+
+@media screen and (max-width:2080px) {
+    .home{
+      height: 60.0em;
+  }  
+}
+
+@media screen and (max-width:680px) {
+    .home{
+      background-size: contain;
+      height: 60.0em;
+  }  
+}
+
+
