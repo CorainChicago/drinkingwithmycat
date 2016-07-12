@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Charlies</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Creator</th>
+      <th>Photo</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @charlies.each do |charlie| %>
+      <tr>
+        <td><%= charlie.description %></td>
+        <td><%= charlie.creator %></td>
+        <td><%= image_tag(charlie.image_url(:thumb)) %></td>
+        <td><%= link_to 'Show', charlie %></td>
+        <td><%= link_to 'Edit', edit_charly_path(charlie) %></td>
+        <td><%= link_to 'Destroy', charlie, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Charlie', new_charly_path %>
