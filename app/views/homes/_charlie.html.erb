@@ -1,12 +1,7 @@
 <section class="charlie">
-  <div class"row">
-    <% @charlie.each do |c| %>
-      <div class="col-sm-2 col-sm-offset-4">
-        <%= image_tag(c.image_url) %>
-        <p><%= c.description %></p>
+        <%= render partial: "charlie_carousel", locals: {charlie: @charlie} %>
       </div>
-      <% end %>
-    </div>  
+    </div> 
     <div class"row"> 
       <div class="col-md-6 col-sm-offset-2">
         <h2>Charlie</h2>

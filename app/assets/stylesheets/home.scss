@@ -9,6 +9,12 @@
     }
 }
 
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 80%;
+      margin: auto;
+  }
+
 @media screen and (max-width:2080px) {
     .home{
       height: 60.0em;
