@@ -12,7 +12,9 @@
 
 .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
-      width: 70%;
+      width: auto;
+      height: 300px;
+      min-height: 300px;
       margin: auto;
   }
 
@@ -36,16 +38,5 @@
     margin-left: 5%;
 }
 
-.second_position{
-  text-aligned: center;
-  position: fixed;
-  color: white;
-  top: 0;
-  z-index: 1;
-  left: 50%;
-  width: auto;
-  background-color: black;
-  
-}
 
 
