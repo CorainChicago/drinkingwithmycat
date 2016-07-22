@@ -17,6 +17,14 @@ class CharliesController < ApplicationController
     @charlie = Charlie.new
   end
 
+  def add_charlie
+    @charlie = Charlie.new
+    respond_to do |format|
+      format.js  {render :add_charlie }
+      format.html {render 'new', locals: {charlie: Charlie.new}}
+    end
+  end
+
   # GET /charlies/1/edit
   def edit
   end
@@ -28,7 +36,7 @@ class CharliesController < ApplicationController
 
     respond_to do |format|
       if @charlie.save
-        format.html { redirect_to @charlie, notice: 'Charlie was successfully created.' }
+        format.html { redirect_to root_path, notice: 'Charlie was successfully created.' }
         format.json { render :show, status: :created, location: @charlie }
       else
         format.html { render :new }

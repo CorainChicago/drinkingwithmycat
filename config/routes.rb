@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :charlies
+  get 'add_charlie' => 'charlies#add_charlie'
   resources :posts
   root 'homes#index'
   # The priority is based upon order of creation: first created -> highest priority.
