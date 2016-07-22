@@ -14,21 +14,16 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <%= image_tag(charlie.first.image_url) %>
+        <%= image_tag charlie.first.image_url(:resized) %>
       </div>
 
       <div class="item">
-        <%= image_tag(charlie[1].image_url) %>
+        <%= image_tag charlie[1].image_url(:resized) %>
       </div>
     
       <div class="item">
-        <%= image_tag(charlie[2].image_url) %>
+        <%= image_tag charlie[2].image_url(:resized) %>
       </div>
-
-      <div class="item">
-        <img src="/intensecharliecopy.jpg" alt="Flower" width="460" height="345">
-      </div>
-    </div>
 
     <!-- Left and right controls -->
     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">

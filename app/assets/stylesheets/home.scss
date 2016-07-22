@@ -12,7 +12,9 @@
 
 .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
-      width: 70%;
+      width: auto;
+      height: 300px;
+      min-height: 300px;
       margin: auto;
   }
 
@@ -28,5 +30,13 @@
       height: 60.0em;
   }  
 }
+
+.first_position{
+    position: fixed;
+    color: white;
+    margin-top: 8%;
+    margin-left: 5%;
+}
+
 
 
