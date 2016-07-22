@@ -32,15 +32,16 @@ class CharliesController < ApplicationController
   # POST /charlies
   # POST /charlies.json
   def create
-    @charlie = Charlie.new(charlie_params)
+    @charlie_new = Charlie.new(charlie_params)
 
     respond_to do |format|
-      if @charlie.save
+      if @charlie_new.save
+        @charlie = Charlie.order("created_at DESC").first(3)
         format.html { redirect_to root_path, notice: 'Charlie was successfully created.' }
         format.json { render :show, status: :created, location: @charlie }
       else
         format.html { render :new }
-        format.json { render json: @charlie.errors, status: :unprocessable_entity }
+        format.json { render json: @charlie_new.errors, status: :unprocessable_entity }
       end
     end
   end
