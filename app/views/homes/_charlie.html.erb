@@ -3,9 +3,10 @@
       </div>
     </div> 
     <div class"row"> 
-      <div class="col-md-6 col-sm-offset-2">
+      <div class="col-md-8 col-sm-offset-4">
         <h2>Why do these cats look alike?</h2>
-        <h4>...because they are named "Charlie".</h4>
+        <h4>...because they are named <%=link_to "Charlie", charlies_path, :remote => true %>.</h4>
+        <button class="new_charlie"><%=link_to "Add your Charlie Cat", add_charlie_path %></button>
       </div> 
     </div> 
 </section>
