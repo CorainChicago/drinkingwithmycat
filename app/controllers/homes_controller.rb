@@ -1,6 +1,6 @@
 class HomesController < ApplicationController
 
   def index
-    @charlie = Charlie.order("created_at DESC").first(3)
+    @charlie = Charlie.order("created_at DESC").first(4)
   end
 end

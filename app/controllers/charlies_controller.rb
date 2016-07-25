@@ -20,7 +20,7 @@ class CharliesController < ApplicationController
   def add_charlie
     @charlie = Charlie.new
     respond_to do |format|
-      format.js  {render :add_charlie }
+      format.js  {render 'add_charlie' }
       format.html {render 'new', locals: {charlie: Charlie.new}}
     end
   end
@@ -36,7 +36,6 @@ class CharliesController < ApplicationController
 
     respond_to do |format|
       if @charlie_new.save
-        @charlie = Charlie.order("created_at DESC").first(3)
         format.html { redirect_to root_path, notice: 'Charlie was successfully created.' }
         format.json { render :show, status: :created, location: @charlie }
       else
