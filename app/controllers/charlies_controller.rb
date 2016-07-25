@@ -20,7 +20,7 @@ class CharliesController < ApplicationController
   def add_charlie
     @charlie = Charlie.new
     respond_to do |format|
-      format.js  {render 'add_charlie' }
+      format.js {render 'add_charlie' }
       format.html {render 'new', locals: {charlie: Charlie.new}}
     end
   end
