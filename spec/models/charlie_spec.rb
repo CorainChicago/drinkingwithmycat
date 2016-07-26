@@ -9,7 +9,7 @@ RSpec.describe Charlie, type: :model do
       expect(charlie.errors.count).to eq 0
     end 
 
-     it "invalid when the email address lacks a '@' symbol" do
+    it "has an error when the email address lacks a '@' symbol" do
       charlie = Charlie.create(description: "Test", email: "testattest.com", image: File.open("#{Rails.root}/public/intensecharliecopy.jpg"))
       expect(charlie.errors.count).to eq 1
     end

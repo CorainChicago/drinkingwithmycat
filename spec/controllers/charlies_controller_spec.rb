@@ -23,13 +23,9 @@ RSpec.describe CharliesController, type: :controller do
   # This should return the minimal set of attributes required to create a valid
   # Charlie. As you add validations to Charlie, be sure to
   # adjust the attributes here as well.
-  let(:valid_attributes) {
-    skip("Add a hash of attributes valid for your model")
-  }
+  let(:valid_attributes) { {description: "Test", email: "test@test.com", image: File.open("#{Rails.root}/public/intensecharliecopy.jpg") }}
 
-  let(:invalid_attributes) {
-    skip("Add a hash of attributes invalid for your model")
-  }
+  let(:invalid_attributes) {{ description: "Test", email: "testtest.com", image: File.open("#{Rails.root}/public/intensecharliecopy.jpg") }}
 
   # This should return the minimal set of values that should be in the session
   # in order to pass any filters (e.g. authentication) defined in
