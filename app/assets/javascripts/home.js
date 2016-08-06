@@ -11,6 +11,8 @@ $(document).ready(function() {
         $('ul').append("<a class='navbar-brand' href='#''>Drinking With My Cat</a>");
       }
     }
-    
+    if ($(window).scrollTop() > 500) { 
+      $('.topnav').addClass('scroll'); 
+    }
   });
 });

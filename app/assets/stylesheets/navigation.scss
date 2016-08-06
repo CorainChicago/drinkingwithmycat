@@ -53,7 +53,13 @@ ul.topnav li.icon {display: none;}
   color: white !important;
   margin-left: 250px !important;
   background-color: rgba(0, 0, 0, 0.3) !important;
+}
 
+.scroll{
+  background-color: black !important;
+  width: 100%;
+  height: auto;
+  z-index: 1;
 }
 
 
