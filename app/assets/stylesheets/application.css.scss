@@ -19,9 +19,10 @@
 
 section:not(:first-child) { 
    border-top: 5.0em solid black;
+   overflow: hidden;
   }
 
 section:last-child { 
-   overflow:auto;
+  overflow:auto;
   padding-bottom:150px;
   }

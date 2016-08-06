@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :items
+  resources :list_of_importances
   resources :charlies
   get 'add_charlie' => 'charlies#add_charlie'
   resources :posts
