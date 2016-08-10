@@ -12,29 +12,13 @@
 }
 
 section.list_of_importance {
-  background: linear-gradient(353deg, #284e45, #87431d, #bbdd08);
-  background-size: 600% 600%;
-
-  -webkit-animation: AnimationName 0s ease infinite;
-  -moz-animation: AnimationName 0s ease infinite;
-  animation: AnimationName 0s ease infinite;
-
-  @-webkit-keyframes AnimationName {
-      0%{background-position:0% 54%}
-      50%{background-position:100% 47%}
-      100%{background-position:0% 54%}
-  }
-  @-moz-keyframes AnimationName {
-      0%{background-position:0% 54%}
-      50%{background-position:100% 47%}
-      100%{background-position:0% 54%}
-  }
-  @keyframes AnimationName { 
-      0%{background-position:0% 54%}
-      50%{background-position:100% 47%}
-      100%{background-position:0% 54%}
-  }
+  background: 
+  linear-gradient( 135deg, transparent 0%, transparent 45%, rgba(255,255,255,.4) 1%, #AA4839 1%, rgba(255,255,255,.4) 55% ) 0px 0px,
+linear-gradient( 45deg, transparent 0%, transparent 45%, rgba(255,255,255,.4) .05%, #9BC362 .05%, transparent 55% ) 0px 0px,
+linear-gradient( 90deg, gray,#022A35,black) 0px 0px;
+  background-size: 15px 15px,15px 15px, 100% 100%;
 }
+
 
 .list_of_importance div{
   background-color: white;
