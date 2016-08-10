@@ -4,6 +4,7 @@
 
 
 .list_of_importance{
+text-align: center;
   min-height: 300px;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -35,10 +36,9 @@ section.list_of_importance {
   }
 }
 
-.list_of_importance h2{
-  background-color: white;
-  width: auto;
-}
 .list_of_importance div{
   background-color: white;
+  border: 5px double black;
+  display: inline-block;
+  padding: 3%;
 }
