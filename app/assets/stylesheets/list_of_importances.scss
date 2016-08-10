@@ -4,6 +4,33 @@
 
 
 .list_of_importance{
-  height: 300px;
+  min-height: 300px;
   padding-top: 50px;
+  padding-bottom: 50px;
+  overflow: hidden;
+}
+
+section.list_of_importance {
+  background: linear-gradient(353deg, #284e45, #87431d, #bbdd08);
+  background-size: 600% 600%;
+
+  -webkit-animation: AnimationName 0s ease infinite;
+  -moz-animation: AnimationName 0s ease infinite;
+  animation: AnimationName 0s ease infinite;
+
+  @-webkit-keyframes AnimationName {
+      0%{background-position:0% 54%}
+      50%{background-position:100% 47%}
+      100%{background-position:0% 54%}
+  }
+  @-moz-keyframes AnimationName {
+      0%{background-position:0% 54%}
+      50%{background-position:100% 47%}
+      100%{background-position:0% 54%}
+  }
+  @keyframes AnimationName { 
+      0%{background-position:0% 54%}
+      50%{background-position:100% 47%}
+      100%{background-position:0% 54%}
+  }
 }
